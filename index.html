@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar VueJs</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <div id="app" class="m-auto bg-light p-3" style="width: 350px;">
+        <h1><center>Todo List</center></h1>
+        <input type="text" class="form-control mb-1" @keyup.enter="add" v-model="value" placeholder="Todo List">
+        <button v-on:click="add"  class="btn btn-primary btn-block">Add Todo</button>
+        <br>
+        <ul>
+            <li v-for="(kd, index) in list">
+                <button @click='del(index)' class="btn btn-link">✘</button>
+                {{kd}}
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="vue.min.js"></script>
+    <script src="apps.js"></script>
+</body>
+</html>
