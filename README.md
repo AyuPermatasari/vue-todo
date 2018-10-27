@@ -1,4 +1,4 @@
 # vue-todo
-simple todo using vueJS
+simple todo using vueJS.
 
-this is a simple vue todo app using html
+this is a simple vue todo app using html.
